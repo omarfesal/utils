@@ -11,17 +11,16 @@ public class ImagesToPdfWithHeaderAndFooter {
     public static void main(String[] args) {
         // Array of image paths
         String[] imagePaths = {
-                "C:\\Users\\Ozi\\Desktop\\mother-data.png",
-                "C:\\Users\\Ozi\\Desktop\\father-data.png",
-                "C:\\Users\\Ozi\\Desktop\\test.png",
-                "C:\\Users\\Ozi\\Desktop\\test.png",
-                "C:\\Users\\Ozi\\Desktop\\test.png"
+                "test.png",
+                "test.png",
+                "test.png",
         };
+
 
         // Output PDF file
         String pdfPath = "output3.pdf";
         // Path to the header image
-        String headerImagePath = "C:\\Users\\Ozi\\Desktop\\citizen\\header.png";
+        String headerImagePath = "header.png";
 
         try {
             // Create a new Document with zero margins
