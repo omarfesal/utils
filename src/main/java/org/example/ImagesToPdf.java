@@ -14,9 +14,10 @@ public class ImagesToPdf {
     public static void main(String[] args) {
         // Array of image paths
         String[] imagePaths = {
-                "test.png",
-                "test.png",
-                "test.png",
+                "image.png",
+                "image.png",
+                "image.png",
+                "image.png",
         };
 
         // Output PDF file

@@ -11,9 +11,9 @@ public class ImagesToPdfWithHeaderAndFooter {
     public static void main(String[] args) {
         // Array of image paths
         String[] imagePaths = {
-                "test.png",
-                "test.png",
-                "test.png",
+                "father-data.png",
+                "father-data.png",
+                "father-data.png",
         };
 
 
@@ -24,7 +24,7 @@ public class ImagesToPdfWithHeaderAndFooter {
 
         try {
             // Create a new Document with zero margins
-            Document document = new Document(PageSize.A4, 0, 0, 100, 50); // Setting top and bottom margins for header and footer
+            Document document = new Document(PageSize.A4, 0, 0, 100, 50);
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdfPath));
 
             // Add event handler for header and footer
@@ -74,7 +74,6 @@ public class ImagesToPdfWithHeaderAndFooter {
         public HeaderFooterPageEvent(String headerImagePath) {
             try {
                 this.headerImage = Image.getInstance(headerImagePath);
-//                this.headerImage.scaleToFit(PageSize.A4.getWidth(), 50); // Scale header image to fit the page width
             } catch (BadElementException | IOException e) {
                 e.printStackTrace();
             }
